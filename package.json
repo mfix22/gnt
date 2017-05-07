@@ -1,0 +1,21 @@
+{
+  "name": "gnt",
+  "version": "0.0.1",
+  "description": "GraphQL Normalized Types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphql",
+    "normalized",
+    "types"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.9.6",
+    "graphqlphonetype": "^1.0.0",
+    "moment": "^2.18.1"
+  }
+}
