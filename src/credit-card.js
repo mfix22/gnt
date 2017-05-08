@@ -40,6 +40,7 @@ function parse (value) {
 
 module.exports = new GraphQLScalarType({
   name: 'CreditCard',
+  description: 'Valid US credit card',
   serialize: parse,
   parseValue: parse,
   parseLiteral (ast) {
