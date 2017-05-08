@@ -1,5 +1,5 @@
 # *G*raphQL *N*ormalized *T*ypes
-The Gin-N-Tonic of GraphQL types. Normalize your common data with GraphQL Scalar types.
+The gin-n-tonic of GraphQL types: simple, final, clean. Normalize your common data with GraphQL Scalar types.
 
 ## Usage
 ```bash
