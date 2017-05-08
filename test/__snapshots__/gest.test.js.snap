@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test types 1`] = `
+Object {
+  "data": Object {
+    "card": Object {
+      "cardType": "VISA",
+      "isExpired": true,
+      "number": "4111111111111111",
+      "validCVV": false,
+      "validExpiryMonth": false,
+      "validExpiryYear": false,
+    },
+    "date": 1494207482,
+    "phone": "+15072273854",
+  },
+}
+`;
