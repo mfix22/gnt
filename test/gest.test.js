@@ -9,7 +9,8 @@ test('Test types', async () => {
     {
       phone(value:"(507)-227-3854")
       date(value: "2017-05-07T20:38:02.854")
-      card(value: "4111111111111111")
+      card(value: "4111111111111111"),
+      state(value: MN)
     }
   `)
   expect(res).toMatchSnapshot()
