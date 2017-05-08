@@ -23,13 +23,17 @@ function parse (value) {
     switch (typeof value) {
       case 'string':
       case 'number': {
-        const cardType = cc.determineCardType(value.toString())
+        const number = value.toString().replace(/\D/g, '')
+        const cardType = cc.determineCardType(number)
         return {
-          number: value.toString(),
+          number,
           cardType
         }
       }
-      default: return Object.assign({ cardType: value.cardType || value.type }, value)
+      default: return Object.assign({}, value, {
+        number: value.number.toString().replace(/\D/g, ''),
+        cardType: value.cardType || value.type
+      })
     }
   }
 }
