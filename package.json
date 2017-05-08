@@ -1,6 +1,6 @@
 {
   "name": "gnt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GraphQL Normalized Types",
   "main": "index.js",
   "scripts": {
