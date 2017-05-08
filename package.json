@@ -31,5 +31,12 @@
   },
   "xo": {
     "extends": "prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfix22/gnt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mfix22/gnt/issues"
   }
 }
