@@ -19,8 +19,8 @@
   "dependencies": {
     "credit-card": "^3.0.1",
     "graphql": "^0.9.6",
-    "graphqlphonetype": "^1.0.0",
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "phone": "^1.0.10"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.0.0",

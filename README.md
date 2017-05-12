@@ -9,19 +9,22 @@ $ npm install --save gnt
 and then add to your schema:
 
 ```javascript
-const { Phone, UnixDate, CreditCard } = require('gnt')
+const { Phone, UnixDate, CreditCard, State } = require('gnt')
 
 {
   name: 'Query',
   fields: {
     phone: { type: Phone },
     date:  { type: UnixDate },
-    card:  { type: CreditCard }
+    card:  { type: CreditCard },
+    state: { type: State }
   }  
 }
 ```
 
-## Example
+## Examples
+
+#### Scalar Types
 ```javascript
 Phone
   Input:  '(817) 569-8900'
@@ -61,3 +64,5 @@ CreditCard
     isExpired: false
   }
 ```
+#### Enum Types
+- `State`: US State
