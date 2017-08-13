@@ -5,12 +5,12 @@ module.exports = new GraphQLScalarType({
   name: 'UnixDate',
   description: 'Unix epoch timestamp',
   serialize: (value) => {
-    return moment(value).unix()
+    return moment.parseZone(value).unix()
   },
   parseValue: (value) => {
-    return moment(value).unix()
+    return moment.parseZone(value).unix()
   },
   parseLiteral (ast) {
-    return moment(ast.value).unix()
+    return moment.parseZone(ast.value).unix()
   }
 })
