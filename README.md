@@ -18,6 +18,7 @@ const { Phone, UnixDate, CreditCard, State } = require('gnt')
     date:  { type: UnixDate },
     card:  { type: CreditCard },
     state: { type: State }
+    zipcode: { type: ZipCode }
   }  
 }
 ```
@@ -29,6 +30,12 @@ const { Phone, UnixDate, CreditCard, State } = require('gnt')
 Phone
   Input:  '(817) 569-8900'
   Output: '+18175698900'
+
+ZipCode
+ Input: '55902'
+ Output: '55902'
+ Input: '00000'
+ Output: null
 
 UnixDate
   Input:  '2017-05-07T14:47:59.438' | new Date()

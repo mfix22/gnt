@@ -1,6 +1,8 @@
 const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql')
 const gnt = require('..')
 
+const resolve = (root, args) => args.value
+
 module.exports = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
@@ -8,22 +10,32 @@ module.exports = new GraphQLSchema({
       phone: {
         type: gnt.Phone,
         args: { value: { type: GraphQLString } },
-        resolve: (root, args) => args.value
+        resolve
       },
       date: {
         type: gnt.UnixDate,
         args: { value: { type: GraphQLString } },
-        resolve: (root, args) => args.value
+        resolve
       },
       card: {
         type: gnt.CreditCard,
         args: { value: { type: GraphQLString } },
-        resolve: (root, args) => args.value
+        resolve
       },
       state: {
         type: gnt.State,
         args: { value: { type: gnt.State } },
-        resolve: (root, args) => args.value
+        resolve
+      },
+      zip1: {
+        type: gnt.ZipCode,
+        args: { value: { type: GraphQLString } },
+        resolve
+      },
+      zip2: {
+        type: gnt.ZipCode,
+        args: { value: { type: GraphQLString } },
+        resolve
       }
     }
   })

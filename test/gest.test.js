@@ -11,6 +11,8 @@ test('Test types', async () => {
       date(value: "2017-05-07T20:38:02.854")
       card(value: "4111 1111 1111 1111"),
       state(value: MN)
+      zip1(value: "00000")
+      zip2(value: "00631")
     }
   `)
   expect(res).toMatchSnapshot()
