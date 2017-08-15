@@ -1,0 +1,20 @@
+{
+  "name": "graphql-types-phone",
+  "version": "0.2.2",
+  "description": "GraphQL Normalized Phone Number Type",
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "normalized",
+    "types",
+    "scalar",
+    "gin-n-tonic",
+    "phone"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "dependencies": {
+    "phone": "^1.0.10",
+    "graphql": "^0.9.6"
+  }
+}

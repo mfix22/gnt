@@ -9,7 +9,7 @@ $ npm install --save gnt
 and then add to your schema:
 
 ```javascript
-const { Phone, UnixDate, CreditCard, State } = require('gnt')
+const { Phone, UnixDate, CreditCard, State, ZipCode } = require('gnt')
 
 {
   name: 'Query',
@@ -24,52 +24,15 @@ const { Phone, UnixDate, CreditCard, State } = require('gnt')
 ```
 
 ## Examples
+Each of these types can be installed individually using there 'Package Name' shown below
 
-#### Scalar Types
-```javascript
-Phone
-  Input:  '(817) 569-8900'
-  Output: '+18175698900'
-
-ZipCode
- Input: '55902'
- Output: '55902'
- Input: '00000'
- Output: null
-
-UnixDate
-  Input:  '2017-05-07T14:47:59.438' | new Date()
-  Output: 1494186489
-
-CreditCard
-  Input:  '4111111111111111' | 4111111111111111
-  Output: {
-    number: '4111111111111111',
-    cardType: 'VISA',
-    validCVV: false,
-    validExpiryMonth: false,
-    validExpiryYear: false,
-    isExpired: true
-  }
-  // OR
-  Input: {
-    cardType: 'VISA',
-    number: '4111111111111111',
-    expiryMonth: '03',
-    expiryYear: '2100',
-    cvv: '123'
-  }
-  Output: {
-    cardType: 'VISA',
-    number: '4111111111111111',
-    expiryMonth: '03',
-    expiryYear: '2100',
-    cvv: '123',
-    validCVV: true,
-    validExpiryMonth: true,
-    validExpiryYear: true,
-    isExpired: false
-  }
-```
+| Type           | Package Name     | Input Example     | Output Example    |
+| :------------- | :-------------   | :-------------    | :-------------    |
+| Phone          | `graphql-types-phone`   | `'(817) 569-8900'` | `'+18175698900'` |
+| Zipcode        | `graphql-types-zipcode` | `'55902'`, `00000` | `'55902'`, `null` |
+| UnixDate       | `graphql-types-unix-timestamp` | `2017-05-07T14:47:59.438`, `Date` | `1494186489` |
+| CreditCard     | `graphql-types-credit-card` | `'4111111111111111'` | ```{ number: '4111111111111111', cardType: 'VISA', validCVV: false, validExpiryMonth: false, validExpiryYear: false, isExpired: true }``` |
 #### Enum Types
-- `State`: US State
+| Type           | Package Name     | Input Example     |
+| :------------- | :-------------   | :-------------    |
+| US State       | `graphql-types-us-state`    | `US`, `CA`, `DE` `...` |

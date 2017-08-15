@@ -1,0 +1,20 @@
+{
+  "name": "graphql-types-credit-card",
+  "version": "0.2.2",
+  "description": "GraphQL Normalized Credit Card Type",
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "normalized",
+    "types",
+    "scalar",
+    "gin-n-tonic",
+    "credit-card"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "dependencies": {
+    "credit-card": "^3.0.1",
+    "graphql": "^0.9.6"
+  }
+}

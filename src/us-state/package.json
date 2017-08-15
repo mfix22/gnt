@@ -1,0 +1,19 @@
+{
+  "name": "graphql-types-us-state",
+  "version": "0.2.2",
+  "description": "GraphQL Normalized US State Type",
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "types",
+    "scalar",
+    "gin-n-tonic",
+    "united states",
+    "us-states"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.9.6"
+  }
+}
