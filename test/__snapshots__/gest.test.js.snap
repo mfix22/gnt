@@ -16,7 +16,7 @@ Object {
     "zip2": "00631",
   },
   "errors": Array [
-    [GraphQLError: Expected a value of type "ZipCode" but received: 00000],
+    [GraphQLError: 00000 is not a valid zipcode],
   ],
 }
 `;
