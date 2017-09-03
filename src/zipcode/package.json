@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-zipcode",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "GraphQL Normalized Zipcode Type",
   "main": "index.js",
   "keywords": [
