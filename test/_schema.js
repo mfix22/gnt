@@ -7,6 +7,11 @@ module.exports = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
     fields: {
+      email: {
+        type: gnt.NonEmptyString,
+        args: { value: { type: GraphQLString } },
+        resolve
+      },
       phone: {
         type: gnt.Phone,
         args: { value: { type: GraphQLString } },

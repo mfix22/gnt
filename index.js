@@ -3,5 +3,6 @@ module.exports = {
   UnixDate: require('./src/unix-date'),
   CreditCard: require('./src/credit-card'),
   State: require('./src/us-state'),
-  ZipCode: require('./src/zipcode')
+  ZipCode: require('./src/zipcode'),
+  NonEmptyString: require('./src/non-empty-string')
 }

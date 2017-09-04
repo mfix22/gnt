@@ -7,6 +7,7 @@ const gest = graphicli(schema)
 test('Test types', async () => {
   const res = await gest(`
     {
+      email(value:"")
       phone(value:"(507)-227-3854")
       date(value: "2017-05-07T20:38:02.854")
       card(value: "4111 1111 1111 1111"),

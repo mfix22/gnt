@@ -12,12 +12,14 @@ Object {
       "validExpiryYear": false,
     },
     "date": 1494189482,
+    "email": null,
     "phone": "+15072273854",
     "state": "MN",
     "zip1": null,
     "zip2": "00631",
   },
   "errors": Array [
+    [GraphQLError: Expected a value of type "NonEmptyString" but received: ],
     [GraphQLError: 00000 is not a valid zipcode],
   ],
 }

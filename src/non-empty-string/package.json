@@ -1,0 +1,19 @@
+{
+  "name": "graphql-types-non-empty-string",
+  "version": "0.0.1",
+  "description": "GraphQL Non-empty String",
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "normalized",
+    "types",
+    "scalar",
+    "gin-n-tonic",
+    "non-empty-string"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "*"
+  }
+}
