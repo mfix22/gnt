@@ -1,7 +1,7 @@
 const { GraphQLScalarType, Kind } = require('graphql')
 
 const parse = v => {
-  if (v == null) return null
+  if (v === undefined || v === null) return null
   const string = String(v)
   return string.length ? string : null
 }

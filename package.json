@@ -20,12 +20,12 @@
   "dependencies": {
     "credit-card": "^3.0.1",
     "graphql-type-json": "^0.1.4",
-    "graphql-types-credit-card": "^0.2.3",
-    "graphql-types-non-empty-string": "0.0.1",
-    "graphql-types-phone": "^0.2.3",
-    "graphql-types-unix-timestamp": "^0.2.3",
-    "graphql-types-us-state": "^0.2.3",
-    "graphql-types-zipcode": "^0.2.5",
+    "graphql-types-credit-card": "^0.2.7",
+    "graphql-types-non-empty-string": "^0.2.7",
+    "graphql-types-phone": "^0.2.7",
+    "graphql-types-unix-timestamp": "^0.2.7",
+    "graphql-types-us-state": "^0.2.7",
+    "graphql-types-zipcode": "^0.2.7",
     "moment": "^2.18.1",
     "phone": "^1.0.10"
   },
