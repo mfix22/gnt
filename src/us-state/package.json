@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-us-state",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "GraphQL Normalized US State Type",
   "main": "index.js",
   "keywords": [
