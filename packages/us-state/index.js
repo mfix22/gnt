@@ -1,4 +1,4 @@
-const Enum = require('../enum')
+const Enum = require('./enum')
 
 module.exports = new Enum({
   name: 'USState',

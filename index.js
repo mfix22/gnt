@@ -1,9 +1,9 @@
 module.exports = {
-  Phone: require('./src/phone'),
-  UnixDate: require('./src/unix-date'),
-  CreditCard: require('./src/credit-card'),
-  State: require('./src/us-state'),
-  ZipCode: require('./src/zipcode'),
-  NonEmptyString: require('./src/non-empty-string'),
+  Phone: require('graphql-types-phone'),
+  UnixDate: require('graphql-types-unix-timestamp'),
+  CreditCard: require('graphql-types-credit-card'),
+  State: require('graphql-types-us-state'),
+  ZipCode: require('graphql-types-zipcode'),
+  NonEmptyString: require('graphql-types-non-empty-string'),
   JSON: require('graphql-type-json')
 }
