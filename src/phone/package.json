@@ -15,6 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "phone": "^1.0.10",
-    "graphql": "^0.9.6"
+    "graphql": "*"
   }
 }

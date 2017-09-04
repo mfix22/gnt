@@ -15,6 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "credit-card": "^3.0.1",
-    "graphql": "^0.9.6"
+    "graphql": "*"
   }
 }

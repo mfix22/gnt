@@ -13,6 +13,6 @@
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "dependencies": {
-    "graphql": "^0.9.6"
+    "graphql": "*"
   }
 }
