@@ -32,7 +32,9 @@ Each of these types can be installed individually using there 'Package Name' sho
 | Zipcode        | `graphql-types-zipcode` | `'55902'`, `00000` | `'55902'`, `null` |
 | UnixDate       | `graphql-types-unix-timestamp` | `2017-05-07T14:47:59.438`, `Date` | `1494186489` |
 | CreditCard     | `graphql-types-credit-card` | `'4111111111111111'` | ```{ number: '4111111111111111', cardType: 'VISA', validCVV: false, validExpiryMonth: false, validExpiryYear: false, isExpired: true }``` |
+| NonEmptyString | `graphql-types-non-empty-string` | `''` | `null`         |
+| JSON           | `graphql-type-json` | `Any` | `JSON Object`  |
 #### Enum Types
 | Type           | Package Name     | Input Example     |
 | :------------- | :-------------   | :-------------    |
-| US State       | `graphql-types-us-state`    | `US`, `CA`, `DE` `...` |
+| USState        | `graphql-types-us-state`    | `US`, `CA`, `DE` `...` |
