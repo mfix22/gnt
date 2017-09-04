@@ -12,7 +12,7 @@
   ],
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "graphql": "*"
   }
 }

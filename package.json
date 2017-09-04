@@ -18,9 +18,11 @@
   "license": "MIT",
   "dependencies": {
     "credit-card": "^3.0.1",
-    "graphql": "*",
     "moment": "^2.18.1",
     "phone": "^1.0.10"
+  },
+  "peerDependencies": {
+    "graphql": "*"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.0.0",

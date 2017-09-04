@@ -14,7 +14,9 @@
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "dependencies": {
-    "phone": "^1.0.10",
+    "phone": "^1.0.10"
+  },
+  "peerDependencies": {
     "graphql": "*"
   }
 }

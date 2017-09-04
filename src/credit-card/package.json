@@ -14,7 +14,9 @@
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "dependencies": {
-    "credit-card": "^3.0.1",
+    "credit-card": "^3.0.1"
+  },
+  "peerDependencies": {
     "graphql": "*"
   }
 }
