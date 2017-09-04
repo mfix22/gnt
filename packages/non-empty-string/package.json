@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-non-empty-string",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "GraphQL Non-empty String",
   "main": "index.js",
   "keywords": [
