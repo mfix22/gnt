@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "credit-card": "^3.0.1",
+    "graphql-type-json": "^0.1.4",
     "moment": "^2.18.1",
     "phone": "^1.0.10"
   },

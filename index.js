@@ -4,5 +4,6 @@ module.exports = {
   CreditCard: require('./src/credit-card'),
   State: require('./src/us-state'),
   ZipCode: require('./src/zipcode'),
-  NonEmptyString: require('./src/non-empty-string')
+  NonEmptyString: require('./src/non-empty-string'),
+  JSON: require('graphql-type-json')
 }
