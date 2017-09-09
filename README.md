@@ -44,3 +44,5 @@ Each of these types can be installed individually using there 'Package Name' sho
 
 ## Contributing
 Contributions are more than welcome! This repo is not meant to be owned by me (and if there is a more suitable owner please [let me know](https://github.com/mfix22/gnt/issues)), but rather by the commuity. 
+
+If you have any idea for new types, please submit an issue or PR!
