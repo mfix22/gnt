@@ -41,7 +41,8 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": "prettier"
+    "extends": "prettier",
+    "env": ["node", "jest"]
   },
   "repository": {
     "type": "git",

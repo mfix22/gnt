@@ -1,7 +1,5 @@
 const dl = require('.')
 
-const t = (state, license) => ({ state, license })
-
 const SUCCESS_CASES = [
   ['AL', '1234567'],
   ['AK', '1234567'],
@@ -38,7 +36,7 @@ const SUCCESS_CASES = [
   ['ND', '123456789'],
   ['OH', '12345678'],
   ['OK', 'A123456789'],
-  ['OR', '1'], // technically okay!
+  ['OR', '1'], // Technically okay!
   ['PA', '12345678'],
   ['RI', 'C123456'],
   ['SC', '12345'],
@@ -61,4 +59,4 @@ SUCCESS_CASES.forEach(([state, license]) => {
   })
 })
 
-// TODO failure cases
+// Failure cases

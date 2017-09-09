@@ -2,7 +2,6 @@
 
 const { GraphQLScalarType, GraphQLError, Kind } = require('graphql')
 const USStateType = require('graphql-types-us-state')
-const { compose } = require('morphmorph')
 const {
   regex,
   whole,
@@ -13,7 +12,7 @@ const {
   repeat
 } = require('rexrex')
 
-// wrap each option with ^$
+// Wrap each option with ^$
 const or = (...xs) => _or(...xs.map(whole))
 
 const states = new Set(USStateType._values.map(v => v.value))

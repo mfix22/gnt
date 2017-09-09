@@ -17,7 +17,7 @@
     "graphql": "*"
   },
   "dependencies": {
-    "morphmorph": "0.0.2",
+    "graphql-types-us-state": "^0.2.7",
     "rexrex": "^1.0.2"
   }
 }
