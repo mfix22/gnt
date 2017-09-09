@@ -144,16 +144,19 @@ const stateRegexMap = {
   WY: whole(numeric(9, 10))
 }
 
-const parse = ({ state, license } = {}) => {
-  if (typeof license !== 'string') throw new GraphQLError('`license` must be of type string')
+const parse = ({ state, license: l } = {}) => {
+  if (typeof l !== 'string') throw new GraphQLError('`license` must be of type string')
   if (typeof state !== 'string') throw new GraphQLError('`state` must be of type string')
 
+  const license = l.trim()
   if (states.has(state)) {
     const rex = regex(stateRegexMap[state])
     if (license.match(rex)) return { state, license }
+
+    throw new GraphQLError(`Licenses from ${state} must match: ${rex}`)
   }
 
-  return null
+  throw new GraphQLError(`${state} is not a valid US state accronym`)
 }
 
 module.exports = new GraphQLScalarType({
