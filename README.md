@@ -9,7 +9,7 @@ $ npm install --save gnt
 and then add to your schema:
 
 ```javascript
-const { Phone, UnixDate, CreditCard, State, ZipCode } = require('gnt')
+const { Phone, UnixDate, CreditCard, State, ZipCode, DriversLicense } = require('gnt')
 
 {
   name: 'Query',
@@ -18,7 +18,8 @@ const { Phone, UnixDate, CreditCard, State, ZipCode } = require('gnt')
     date:  { type: UnixDate },
     card:  { type: CreditCard },
     state: { type: State }
-    zipcode: { type: ZipCode }
+    zipcode: { type: ZipCode },
+    license: { type: DriversLicense }
   }  
 }
 ```
@@ -34,6 +35,7 @@ Each of these types can be installed individually using there 'Package Name' sho
 | CreditCard     | `graphql-types-credit-card` | `'4111111111111111'` | ```{ number: '4111111111111111', cardType: 'VISA', validCVV: false, validExpiryMonth: false, validExpiryYear: false, isExpired: true }``` |
 | NonEmptyString | `graphql-types-non-empty-string` | `''` | `null`         |
 | JSON           | `graphql-type-json` | `Any` | `JSON Object`  |
+| Drivers License| `graphql-types-drivers-license` | `{ state: 'CA', license: 'B2347354' }`| ``{ state: 'CA', license: 'B2347354' }` OR `null` |
 #### Enum Types
 | Type           | Package Name     | Input Example     |
 | :------------- | :-------------   | :-------------    |
