@@ -2,7 +2,8 @@
   "scripts": {
     "lint": "xo",
     "test": "jest",
-    "link": "lerna bootstrap"
+    "link": "lerna bootstrap",
+    "publish": "npm run lint && npm test && lerna publish"
   },
   "keywords": [
     "graphql",
