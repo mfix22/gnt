@@ -1,0 +1,23 @@
+{
+  "name": "graphql-types-drivers-license",
+  "version": "0.3.0",
+  "description": "GraphQL US Driver's License",
+  "main": "index.js",
+  "keywords": [
+    "graphql",
+    "normalized",
+    "types",
+    "scalar",
+    "gin-n-tonic",
+    "drivers license"
+  ],
+  "author": "Michael Fix <@mfix22>",
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "*"
+  },
+  "dependencies": {
+    "graphql-types-us-state": "^0.2.7",
+    "rexrex": "^1.0.2"
+  }
+}

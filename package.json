@@ -20,6 +20,7 @@
   "dependencies": {
     "graphql-type-json": "^0.1.4",
     "graphql-types-credit-card": "^0.2.7",
+    "graphql-types-drivers-license": "^0.3.0",
     "graphql-types-non-empty-string": "^0.2.7",
     "graphql-types-phone": "^0.2.7",
     "graphql-types-unix-timestamp": "^0.2.7",
@@ -38,7 +39,11 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": "prettier"
+    "extends": "prettier",
+    "env": [
+      "node",
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
