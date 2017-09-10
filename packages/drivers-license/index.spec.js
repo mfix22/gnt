@@ -1,5 +1,13 @@
 const dl = require('.')
 
+test('should throw errors for invalid inputs', () => {
+  expect(() => dl._scalarConfig.parseValue(null)).toThrow()
+  expect(() => dl._scalarConfig.parseValue({})).toThrow()
+  expect(() => dl._scalarConfig.parseValue({ state: 'MN' })).toThrow()
+  expect(() => dl._scalarConfig.parseValue({ state: 'XZ', license: '12345' })).toThrow()
+  expect(() => dl._scalarConfig.parseValue({ license: '12345' })).toThrow()
+})
+
 const SUCCESS_CASES = [
   ['AL', '1234567'],
   ['AK', '1234567'],
