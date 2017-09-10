@@ -1,8 +1,4 @@
 {
-  "name": "gnt",
-  "version": "0.2.6",
-  "description": "GraphQL Normalized Types",
-  "main": "index.js",
   "scripts": {
     "lint": "xo",
     "test": "jest",
@@ -17,25 +13,12 @@
   ],
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
-  "dependencies": {
-    "graphql-type-json": "^0.1.4",
-    "graphql-types-credit-card": "^0.2.7",
-    "graphql-types-drivers-license": "^0.3.0",
-    "graphql-types-non-empty-string": "^0.2.7",
-    "graphql-types-phone": "^0.2.7",
-    "graphql-types-unix-timestamp": "^0.2.7",
-    "graphql-types-us-state": "^0.2.7",
-    "graphql-types-zipcode": "^0.2.7"
-  },
-  "peerDependencies": {
-    "graphql": "*"
-  },
   "devDependencies": {
-    "eslint-config-prettier": "^2.0.0",
-    "graphicli": "^1.4.0",
+    "eslint-config-prettier": "^2.4.0",
+    "graphicli": "^1.5.1",
     "jest": "^20.0.4",
     "lerna": "^2.1.2",
-    "prettier": "^1.3.1",
+    "prettier": "^1.6.1",
     "xo": "^0.18.2"
   },
   "xo": {
