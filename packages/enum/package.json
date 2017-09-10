@@ -1,7 +1,7 @@
 {
-  "name": "graphql-types-drivers-license",
+  "name": "graphql-types-enum",
   "version": "0.3.2",
-  "description": "GraphQL US Driver's License",
+  "description": "GraphQL Enum Type",
   "main": "index.js",
   "keywords": [
     "graphql",
@@ -9,15 +9,11 @@
     "types",
     "scalar",
     "gin-n-tonic",
-    "drivers license"
+    "enum"
   ],
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "peerDependencies": {
     "graphql": "*"
-  },
-  "dependencies": {
-    "graphql-types-us-state": "^0.3.2",
-    "rexrex": "^1.0.2"
   }
 }
