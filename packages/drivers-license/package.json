@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-drivers-license",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "GraphQL US Driver's License",
   "main": "index.js",
   "keywords": [
