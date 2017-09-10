@@ -3,6 +3,7 @@ The gin-n-tonic of GraphQL types: simple, final, clean. Normalize your common da
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#contributing)
 ## Usage
 ```bash
 $ npm install --save gnt
@@ -40,3 +41,8 @@ Each of these types can be installed individually using there 'Package Name' sho
 | Type           | Package Name     | Input Example     |
 | :------------- | :-------------   | :-------------    |
 | USState        | `graphql-types-us-state`    | `US`, `CA`, `DE` `...` |
+
+## Contributing
+Contributions are more than welcome! This repo is not meant to be owned by me (and if there is a more suitable owner please [let me know](https://github.com/mfix22/gnt/issues)), but rather by the commuity. 
+
+If you have any idea for new types, please submit an issue or PR!
