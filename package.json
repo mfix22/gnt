@@ -21,6 +21,7 @@
     "credit-card": "^3.0.1",
     "graphql-type-json": "^0.1.4",
     "graphql-types-credit-card": "^0.2.7",
+    "graphql-types-drivers-license": "^0.3.0",
     "graphql-types-non-empty-string": "^0.2.7",
     "graphql-types-phone": "^0.2.7",
     "graphql-types-unix-timestamp": "^0.2.7",
@@ -42,7 +43,10 @@
   },
   "xo": {
     "extends": "prettier",
-    "env": ["node", "jest"]
+    "env": [
+      "node",
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
