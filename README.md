@@ -1,5 +1,5 @@
 # *G*raphQL *N*ormalized *T*ypes :cocktail:
-The gin-n-tonic of GraphQL types: simple, final, clean. Normalize your common data with GraphQL Scalar types.
+The **g**in-**n**-**t**onic of GraphQL types: simple, final, clean. Normalize your common data with GraphQL Scalar types.
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
