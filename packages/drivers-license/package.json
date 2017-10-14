@@ -17,8 +17,10 @@
     "graphql": "*"
   },
   "dependencies": {
-    "graphql": "^0.11.3",
     "graphql-types-us-state": "^0.3.2",
     "rexrex": "^1.0.2"
+  },
+  "devDependencies": {
+    "graphql": "0.10.5"
   }
 }
