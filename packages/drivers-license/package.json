@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-drivers-license",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "GraphQL US Driver's License",
   "main": "index.js",
   "keywords": [
@@ -17,7 +17,7 @@
     "graphql": "*"
   },
   "dependencies": {
-    "graphql-types-us-state": "^0.3.2",
+    "graphql-types-us-state": "^0.3.4",
     "rexrex": "^1.0.2"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-unix-timestamp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "GraphQL Normalized Unix Timestamp Type",
   "main": "index.js",
   "keywords": [
