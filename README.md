@@ -53,5 +53,6 @@ First run:
 $ npm run generate -- '<your type name>'
 ```
 to get started. A folder with `index.js`, `index.spec.js` (your test), and a `package.json` will be created for you!
+Then run `npm run link` and you should be on your way.
 
 If you have any idea for new types, please submit an issue or PR!
