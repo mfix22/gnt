@@ -14,7 +14,6 @@
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "dependencies": {
-    "graphql-type-json": "^0.1.4",
     "graphql-types-credit-card": "^0.2.7",
     "graphql-types-drivers-license": "^0.3.3",
     "graphql-types-enum": "^0.3.2",

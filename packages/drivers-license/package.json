@@ -21,6 +21,6 @@
     "rexrex": "^1.0.2"
   },
   "devDependencies": {
-    "graphql": "0.10.5"
+    "graphql": ">=0.10"
   }
 }
