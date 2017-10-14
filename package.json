@@ -3,7 +3,8 @@
     "lint": "xo",
     "test": "jest",
     "link": "lerna bootstrap",
-    "publish": "npm run lint && npm test && lerna publish"
+    "publish": "npm run lint && npm test && lerna publish",
+    "generate": "node ./scripts/generate"
   },
   "keywords": [
     "graphql",
@@ -16,9 +17,12 @@
   "license": "MIT",
   "devDependencies": {
     "eslint-config-prettier": "^2.4.0",
+    "fs-extra": "^4.0.2",
     "jest": "^21.0.2",
     "lerna": "^2.1.2",
+    "log-symbols": "^2.1.0",
     "prettier": "^1.6.1",
+    "to-slug-case": "^1.0.0",
     "xo": "^0.18.2"
   },
   "xo": {
@@ -26,7 +30,10 @@
     "env": [
       "node",
       "jest"
-    ]
+    ],
+    "rules": {
+      "unicorn/explicit-length-check": "off"
+    }
   },
   "repository": {
     "type": "git",

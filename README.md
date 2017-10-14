@@ -45,6 +45,13 @@ Each of these types can be installed individually using there 'Package Name' sho
 | USState        | `graphql-types-us-state`    | `US`, `CA`, `DE` `...` |
 
 ## Contributing
-Contributions are more than welcome! This repo is not meant to be owned by me (and if there is a more suitable owner please [let me know](https://github.com/mfix22/gnt/issues)), but rather by the commuity. 
+Contributions are more than welcome! This repo is not meant to be owned by me (and if there is a more suitable owner please [let me know](https://github.com/mfix22/gnt/issues)), but rather by the commuity.
+
+### Creating a new type
+First run:
+```shell
+$ npm run generate -- '<your type name>'
+```
+to get started. A folder with `index.js`, `index.spec.js` (your test), and a `package.json` will be created for you!
 
 If you have any idea for new types, please submit an issue or PR!
