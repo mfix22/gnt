@@ -51,7 +51,7 @@
     {
       "component": "header",
       "heading": "gnt",
-      "subhead": ":cocktail: GraphQL Normalized Types",
+      "subhead": "GraphQL Normalized Types 🍸",
       "children": [
         {
           "component": "ui/TweetButton",
@@ -63,7 +63,10 @@
           "user": "mfix22",
           "repo": "gnt"
         }
-      ]
+      ],
+      "links": [],
+      "text": "simple.final.reliable",
+      "slug": ""
     },
     {
       "component": "article",
