@@ -1,0 +1,89 @@
+{
+  "name": "mfix22/gnt",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "GraphQL Normalized Types",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://www.npmjs.com/package/gnt",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/mfix22/gnt",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "gnt",
+      "subhead": ":cocktail: GraphQL Normalized Types",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "gnt: :cocktail: GraphQL Normalized Types",
+          "url": "https://www.npmjs.com/package/gnt"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mfix22",
+          "repo": "gnt"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1><em>G</em>raphQL <em>N</em>ormalized <em>T</em>ypes :cocktail:</h1>\n<p>The <strong>g</strong>in-<strong>n</strong>-<strong>t</strong>onic of GraphQL types: simple, final, clean. Normalize your common data with GraphQL Scalar types.</p>\n<p><a href=\"https://github.com/facebook/jest\"><img src=\"https://img.shields.io/badge/tested_with-jest-99424f.svg\"></a>\n<a href=\"https://lernajs.io/\"><img src=\"https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg\"></a>\n<a href=\"#contributing\"><img src=\"https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat\"></a></p>\n<h2>Usage</h2>\n<pre>$ npm install --save gnt</pre><p>and then add to your schema:</p>\n<pre><span class=\"hljs-keyword\">const</span> { Phone, UnixDate, CreditCard, State, ZipCode, DriversLicense } = <span class=\"hljs-built_in\">require</span>(<span class=\"hljs-string\">&apos;gnt&apos;</span>)\n\n{\n  <span class=\"hljs-attr\">name</span>: <span class=\"hljs-string\">&apos;Query&apos;</span>,\n  <span class=\"hljs-attr\">fields</span>: {\n    <span class=\"hljs-attr\">phone</span>: { <span class=\"hljs-attr\">type</span>: Phone },\n    <span class=\"hljs-attr\">date</span>:  { <span class=\"hljs-attr\">type</span>: UnixDate },\n    <span class=\"hljs-attr\">card</span>:  { <span class=\"hljs-attr\">type</span>: CreditCard },\n    <span class=\"hljs-attr\">state</span>: { <span class=\"hljs-attr\">type</span>: State }\n    zipcode: { <span class=\"hljs-attr\">type</span>: ZipCode },\n    <span class=\"hljs-attr\">license</span>: { <span class=\"hljs-attr\">type</span>: DriversLicense }\n  }  \n}</pre><h2>Examples</h2>\n<p>Each of these types can be installed individually using there &apos;Package Name&apos; shown below</p>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Package Name</th>\n<th>Input Example</th>\n<th>Output Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Phone</td>\n<td><code>graphql-types-phone</code></td>\n<td><code>&apos;(817) 569-8900&apos;</code></td>\n<td><code>&apos;+18175698900&apos;</code></td>\n</tr>\n<tr>\n<td>Zipcode</td>\n<td><code>graphql-types-zipcode</code></td>\n<td><code>&apos;55902&apos;</code>, <code>00000</code></td>\n<td><code>&apos;55902&apos;</code>, <code>null</code></td>\n</tr>\n<tr>\n<td>UnixDate</td>\n<td><code>graphql-types-unix-timestamp</code></td>\n<td><code>2017-05-07T14:47:59.438</code>, <code>Date</code></td>\n<td><code>1494186489</code></td>\n</tr>\n<tr>\n<td>CreditCard</td>\n<td><code>graphql-types-credit-card</code></td>\n<td><code>&apos;4111111111111111&apos;</code></td>\n<td><code>{ number: &apos;4111111111111111&apos;, cardType: &apos;VISA&apos;, validCVV: false, validExpiryMonth: false, validExpiryYear: false, isExpired: true }</code></td>\n</tr>\n<tr>\n<td>NonEmptyString</td>\n<td><code>graphql-types-non-empty-string</code></td>\n<td><code>&apos;&apos;</code></td>\n<td><code>null</code></td>\n</tr>\n<tr>\n<td>Drivers License</td>\n<td><code>graphql-types-drivers-license</code></td>\n<td><code>{ state: &apos;CA&apos;, license: &apos;B2347354&apos; }</code></td>\n<td><code>{ state: &apos;CA&apos;, license: &apos;B2347354&apos; }</code> OR <code>null</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Enum Types</h4>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Package Name</th>\n<th>Input Example</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>USState</td>\n<td><code>graphql-types-us-state</code></td>\n<td><code>US</code>, <code>CA</code>, <code>DE</code> <code>...</code></td>\n</tr>\n</tbody>\n</table>\n<h2>Contributing</h2>\n<p>Contributions are more than welcome! This repo is not meant to be owned by me (and if there is a more suitable owner please <a href=\"https://github.com/mfix22/gnt/issues\">let me know</a>), but rather by the commuity.</p>\n<h3>Creating a new type</h3>\n<p>First run:</p>\n<pre>$ npm run generate -- &apos;&lt;your type name&gt;&apos;</pre><p>to get started. A folder with <code>index.js</code>, <code>index.spec.js</code> (your test), and a <code>package.json</code> will be created for you!\nThen run <code>npm run link</code> and you should be on your way.</p>\n<p>If you have any idea for new types, please submit an issue or PR!</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mfix22/gnt",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mfix22",
+          "text": "mfix22"
+        }
+      ]
+    }
+  ]
+}
