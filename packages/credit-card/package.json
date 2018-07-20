@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-credit-card",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "GraphQL Normalized Credit Card Type",
   "main": "index.js",
   "keywords": [

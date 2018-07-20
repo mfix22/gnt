@@ -1,6 +1,6 @@
 {
   "name": "graphql-types-us-state",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "GraphQL Normalized US State Type",
   "main": "index.js",
   "keywords": [
@@ -14,7 +14,7 @@
   "author": "Michael Fix <@mfix22>",
   "license": "MIT",
   "dependencies": {
-    "graphql-types-enum": "^0.3.4"
+    "graphql-types-enum": "^0.3.5"
   },
   "peerDependencies": {
     "graphql": "*"
