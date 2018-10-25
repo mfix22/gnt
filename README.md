@@ -13,18 +13,19 @@ and then add to your schema:
 
 ```javascript
 const { Phone, UnixDate, CreditCard, State, ZipCode, DriversLicense } = require('gnt')
+const { makeExecutableSchema } = require('graphql-tools');
 
-{
-  name: 'Query',
-  fields: {
-    phone: { type: Phone },
-    date:  { type: UnixDate },
-    card:  { type: CreditCard },
-    state: { type: State }
-    zipcode: { type: ZipCode },
-    license: { type: DriversLicense }
-  }  
-}
+makeExecutableSchema({ 
+  typeDefs: schemaString, 
+  resolvers: {
+    Phone,
+    UnixDate,
+    CreditCard,
+    USState: State,
+    ZipCode,
+    DriversLicense
+  }
+});
 ```
 
 ## Examples
